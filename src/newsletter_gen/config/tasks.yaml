@@ -1,0 +1,67 @@
+keyword_based_news_research:
+  description: >
+    Conduct keyword-based research on news articles from the web.
+    Retrieve articles related to the specified keywords and extract details such as
+    the source, title, publication date, and a short summary of each article.
+    Make sure the articles are recent and relevant to the given keywords. Do not include articles that are not news materials or that are not directly related to the keywords
+    
+    Keywords: {keywords}
+    Time Frame: {time_frame}
+  expected_output: >
+    A list of articles with the following details:
+    1. Source (news platform or website)
+    2. Title of the article
+    3. Date of publication
+    4. A short summary of the article's content
+    5. URL of the article where the article was found
+
+analyze_news_articles:
+  description: >
+    Analyze the extracted articles, focusing on market trends and sentiment.
+    For each article, determine the overall sentiment (positive, neutral, negative) and
+    any market impact based on the article's content.
+    
+    Make sure to consider the relevance of the article to the business or market of interest.
+    
+    Articles: {articles}
+  expected_output: >
+    A list of articles with additional analysis:
+    1. Sentiment (Positive, Neutral, Negative)
+    2. Market Impact (brief explanation of the article's business impact)
+
+
+strategize_market_movements:
+  description: >
+    Utilize the analyzed news data to provide a strategic overview of market trends.
+    Based on the sentiment and market impact analysis, develop actionable strategies for businesses
+    to navigate these trends.
+    
+    Summarize how the trends are affecting the industry and propose potential strategies to address them.
+    
+    Analyzed Articles: {analyzed_articles}
+  expected_output: >
+    1. Key Market Trends identified from the articles
+    2. Strategic recommendations for businesses
+
+
+
+generate_market_report:
+  description: >
+    Compile all the extracted and analyzed information into an Excel report.
+    The report should include details for each article (source, title, date, summary, sentiment),
+    along with a summary of key market trends and strategic recommendations.
+    
+    Make sure the report is well-organized and formatted.
+    
+    Data: {analyzed_data}
+  expected_output: >
+    1. A structured Excel report with the following columns:
+       - Source
+       - Title
+       - Date
+       - Summary
+       - Sentiment
+       - Market Impact
+    2. A summary section with:
+       - Key Market Trends
+       - Strategic Recommendations

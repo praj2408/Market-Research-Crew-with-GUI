@@ -1,0 +1,9 @@
+langchain-core
+langchain-community
+langchain-openai
+langchain-anthropic
+langchain
+langchain_groq
+langchain_google_genai
+exa-py
+crewai_tools
